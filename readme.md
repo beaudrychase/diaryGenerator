@@ -23,15 +23,13 @@ If you want to use this code, you will need to do the following:
 
 - Install Python3 for your platform
 - Clone the git repository
-- You'll need the pymupdf library to do the heavy lifting (details (here)[https://pymupdf.readthedocs.io/en/latest/]. To install this run the shell command:
-`pip3 install fitz`
+- To run this project you'll need to install the dependencies defined in `requirements.txt`, depending on your system `pip install -r requirements.txt` will do this.
 - Then cd to the directory where the code is, and run
- `python3 build_my_notebook.py "testout.pdf"`
+ `python3 -m diary_generator "testout.pdf"`
  This should generate the default testout.pdf file.
  
- Now you can edit "build_my_notebook.py" and make it do what you want. This contains the code for stiching together the notebook pages.
+ Now you can edit "__main__.py" and make it do what you want. This contains the code for stiching together the notebook pages.
  
- The file notebook_builder.py, on the other hand, contains the core classes and documentation on how to use them.
  
  
  ## Key Concepts
